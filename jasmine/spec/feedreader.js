@@ -108,16 +108,30 @@ $(function() {
          it('there is a single entry in feed after loadFeed is called', function(){
            var numberEntries = document.querySelector('.feed');
            expect(numberEntries.children.length > 0).toBe(true);
-           
+
          })
        });
     /* TODO: Write a new test suite named "New Feed Selection" */
       describe('New Feed Selection',function(){
 
 
-    });
+
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
+         beforeEach(function(done){
+           loadFeed(0)
+           var feed = document.querySelector('.feed').innerHTML;
+
+           loadFeed(1,done)
+         });
+
+         it('content should change', function(){
+           var newFeed = document.querySelector('.feed').innerHTML;
+           expect(feed).not.toBe(newFeed);
+         })
+
+     });
 }());
