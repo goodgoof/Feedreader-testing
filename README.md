@@ -21,3 +21,5 @@ To successfully run an application testing the features of the application is ve
 * Initial Entries suite is testing the asynchronous function of the loadFeed().There is 1 test here to check for entry in the feed container when the loadFeed() is called.
 
 * New feed Selection is another test suite to check for content change when loadFeed() is called. There is one test in this suite.
+
+ For successful testing of the application I referred to jasmine documentation, Matthew Cranford's walthroughs and youtube videos of Alain and Ryan Boris. Thanks to them for good explanation of the New Feed selection test suite and Initial entries test suite.
