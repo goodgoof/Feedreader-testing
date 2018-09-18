@@ -12,14 +12,13 @@ You will learn how to use Jasmine to write a number of tests against a pre-exist
 
 ## Steps required to successfully test the application
 
-To successfully run an application testing the features of the application is very important. I wrote 4 test suites to cover the application.
+To successfully run the application follow the below steps:
 
-* RSS feeds tests whether the all the urls and name of website has been defined correctly or not.There are 3 tests in this suite to cover the allfeeds variable defined in app.js.
-
-* The Menu is the next suite of test. This checks that the menu link is hidden by default and toggles on every click. There are 3 tests in this suite.
-
-* Initial Entries suite is testing the asynchronous function of the loadFeed().There is 1 test here to check for entry in the feed container when the loadFeed() is called.
-
-* New feed Selection is another test suite to check for content change when loadFeed() is called. There is one test in this suite.
-
- For successful testing of the application I referred to jasmine documentation, Matthew Cranford's walthroughs and youtube videos of Alain and Ryan Boris. Thanks to them for good explanation of the New Feed selection test suite and Initial entries test suite.
+* open command prompt or terminal.
+* cd <directory_name> //where u want to save the Project
+* go to https://github.com/goodgoof/Feedreader-testing page click on the clone or download green button.
+* clone the repo on your terminal using command
+`git clone git@github.com:goodgoof/Feedreader-testing.git`
+* go to the cloned repo in your directory using cmd `cd`
+* open index.html in your browser.
+scroll down to see the test results.
