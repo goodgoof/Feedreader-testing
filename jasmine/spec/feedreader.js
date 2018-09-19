@@ -100,7 +100,7 @@ $(function() {
 
          it('content should change', function(){
            const newFeed = document.querySelector('.feed').innerHTML;
-           expect(feed).not.toBe(newFeed);
+           expect(initialFeed).not.toBe(newFeed);
          })
 
      });
