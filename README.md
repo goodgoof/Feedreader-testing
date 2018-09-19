@@ -22,3 +22,7 @@ To successfully run the application follow the below steps:
 * go to the cloned repo in your directory using cmd `cd`
 * open index.html in your browser.
 scroll down to see the test results.
+
+## Resources
+
+ For successful completion of this project I referred to jasmine documentation, Matthew Cranford's walthroughs and youtube videos of Alain and Ryan Boris. Thanks to them for good explanation of the New Feed selection test suite and Initial entries test suite. The review by my review also helped me makes changes and fix bugs. Thanks.
