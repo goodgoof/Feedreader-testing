@@ -48,21 +48,21 @@ $(function() {
     describe('The Menu',function(){
 
          it('is hidden by default', function(){
-           var body = document.body;
+           const body = document.body;
            expect(body.className).toContain('menu-hidden')
          })
 
           it('menu toggles', function(){
-            var body = document.body;
-            var menuIcon = document.querySelector('.menu-icon-link')
+            const body = document.body;
+            const menuIcon = document.querySelector('.menu-icon-link')
 
             menuIcon.click();
             expect(body.className).not.toContain('menu-hidden')
           })
 
           it('menu toggles', function(){
-            var body = document.body;
-            var menuIcon = document.querySelector('.menu-icon-link')
+            const body = document.body;
+            const menuIcon = document.querySelector('.menu-icon-link')
 
             menuIcon.click();
             expect(body.className).toContain('menu-hidden')
@@ -76,8 +76,8 @@ $(function() {
          });
 
          it('there is a single entry in feed after loadFeed is called', function(){
-           var numberEntries = document.querySelector('.feed');
-           expect(numberEntries.children.length > 0).toBe(true);
+           const numberEntries = document.querySelector('.feed').getElementsByClassName('entry').length;
+           expect(numberEntries > 0).toBe(true);
 
          })
        });
@@ -87,14 +87,19 @@ $(function() {
          beforeEach(function(done){
            loadFeed(0, function(){
              initialFeed = $('.feed').innerText;
-           })
-           
 
-           loadFeed(1,done)
+              loadFeed(1,function(){
+                newFeed = document.querySelector('.feed').innerHTML;
+                done();
+              })
+           })
+
+
+
          });
 
          it('content should change', function(){
-           var newFeed = document.querySelector('.feed').innerHTML;
+           const newFeed = document.querySelector('.feed').innerHTML;
            expect(feed).not.toBe(newFeed);
          })
 

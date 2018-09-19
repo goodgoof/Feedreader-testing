@@ -15,7 +15,7 @@ You will learn how to use Jasmine to write a number of tests against a pre-exist
 To successfully run the application follow the below steps:
 
 * open command prompt or terminal.
-* cd <directory_name> //where u want to save the Project
+* cd <directory_name> where u want to save the Project
 * go to https://github.com/goodgoof/Feedreader-testing page click on the clone or download green button.
 * clone the repo on your terminal using command
 `git clone git@github.com:goodgoof/Feedreader-testing.git`
